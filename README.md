@@ -53,4 +53,4 @@ Methods:
 - Constructors
 - Getters
 - Setters
-- ToString
+- ToStrings
