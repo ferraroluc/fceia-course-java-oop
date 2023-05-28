@@ -6,7 +6,7 @@ public class Main {
         Scanner s = new Scanner(System.in);
 
         // objects
-        PeopleRegistration rp = new PeopleRegistration();
+        PersonRegistration rp = new PersonRegistration();
 
         // menu
         int option = -1;
@@ -15,7 +15,7 @@ public class Main {
             System.out.println("1. Insertar Persona");
             System.out.println("2. Insertar Docente");
             System.out.println("3. Insertar Empresario");
-            System.out.println("4. Suprimir");
+            System.out.println("4. Eliminar");
             System.out.println("5. Modificar (deshabilitada)");
             System.out.println("6. Imprimir");
             System.out.println("0. Salir");
@@ -73,7 +73,7 @@ public class Main {
                     break;
 
                 case 5:
-                    System.out.println("Esta opción no se incluye en el alcance del curso");
+                    System.out.println("Esta opción no está incluida en el alcance del curso");
                     break;
 
                 case 6:

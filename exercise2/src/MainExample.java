@@ -38,11 +38,10 @@ public class MainExample {
         }
 
         // collection
-        System.out.println("\n====== Colección ======");
         Collection c = new ArrayList<>();
 
         // add
-        System.out.println("\n====== Agregar ======");
+        System.out.println("\n====== Colección: agregar ======");
         c.add(p);
         c.add(t);
         c.add(b);
@@ -56,7 +55,7 @@ public class MainExample {
         System.out.println("La cantidad de objetos que tengo en la colección es: "+ c.size() );
 
         // remove
-        System.out.println("\n====== Eliminar ======");
+        System.out.println("\n====== Colección: eliminar ======");
         c.remove(12);
 
         for (Object o: c) {

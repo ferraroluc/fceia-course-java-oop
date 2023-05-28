@@ -6,12 +6,14 @@ In this project we can find the Java exercises and projects for the postgraduate
 
 ### Exercise 1
 
-Create a project with the classes:
+Replicate the exercise from Class 3.
 
-- Estudiante
-- Estudiante Universitario (extends Estudiante)
+Classes:
 
-And the methods:
+- Student
+- University Student (extends Student)
+
+Methods:
 
 - Constructors
 - Getters
@@ -20,14 +22,16 @@ And the methods:
 
 ### Exercise 2
 
-Create a project with the classes:
+Replicate the exercise from Class 4.
 
-- Persona
-- Docente (extends Persona)
-- Empresario (extends Persona)
-- Registro de Personas (collection)
+Classes:
 
-And the methods:
+- Person
+- Teacher (extends Person)
+- Businessman (extends Person)
+- Person Registration
+
+Methods:
 
 - Constructors
 - Getters
@@ -36,8 +40,19 @@ And the methods:
 
 ### Exercise 3
 
-Replicar el ejercicio de la Clase 5. Excepciones con varios catchs y Finally. Las clases que se implementen deben tener los métodos necesarios para una correcta implementación de la clase (constructores,getters, setters, tostring). Ud. podrá incorporar los métodos si lo considera necesario.
+Replicate the exercise from Class 5.
 
-Nota: En los ejercicios incorporar comentarios que indiquen dónde se utiliza herencia, dónde se usa polimorfismo y qué tipo de polimorfismo se emplea. En el caso de las excepciones incorporar comentarios que explique como funcionan y en lo posible proponer casos de prueba para que se genere y atrape las excepciones que ud. usa en el programa.
+Use:
+
+- Exception
+- Catch
+- Finally
+
+Methods:
+
+- Constructors
+- Getters
+- Setters
+- ToString
 
 ## Monograph

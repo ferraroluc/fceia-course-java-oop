@@ -2,12 +2,12 @@ import java.util.ArrayList;
 import java.util.Collection;
 import java.util.Iterator;
 
-public class PeopleRegistration {
+public class PersonRegistration {
     // variables
     Collection<Person> registry;
 
     // constructors
-    public PeopleRegistration() {
+    public PersonRegistration() {
         this.registry = new ArrayList<>();
     }
 

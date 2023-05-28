@@ -1,17 +1,33 @@
-// Press Shift twice to open the Search Everywhere dialog and type `show whitespaces`,
-// then press Enter. You can now see whitespace characters in your code.
+import java.io.IOException;
+import java.util.InputMismatchException;
+import java.util.Scanner;
+
 public class Main {
     public static void main(String[] args) {
-        // Press Alt+Intro with your caret at the highlighted text to see how
-        // IntelliJ IDEA suggests fixing it.
-        System.out.printf("Hello and welcome!");
+        // scanner
+        Scanner s = new Scanner(System.in);
 
-        // Press Mayús+F10 or click the green arrow button in the gutter to run the code.
-        for (int i = 1; i <= 5; i++) {
+        // variables
+        double n1, n2;
 
-            // Press Mayús+F9 to start debugging your code. We have set one breakpoint
-            // for you, but you can always add more by pressing Ctrl+F8.
-            System.out.println("i = " + i);
+        // division
+        try {
+            System.out.println("Ingrese un dividendo: ");
+            n1 = s.nextDouble();
+            System.out.println("Ingrese el divisor: ");
+            n2 = s.nextDouble();
+
+            if (n2 == 0) throw new ArithmeticException("El divisor no puede ser 0");
+
+            System.out.println("El resultado de la división es: " + n1/n2);
+        } catch (ArithmeticException e) {
+            System.out.println("ERROR: " + e);
+        } catch (InputMismatchException e) {
+            System.out.println("ERROR: " + e);
+        } catch (RuntimeException e) {
+            System.out.println("ERROR: Error desconocido");
+        } finally {
+            System.out.println("Fin del programa");
         }
     }
 }
