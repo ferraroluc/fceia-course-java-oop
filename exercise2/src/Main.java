@@ -2,7 +2,7 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-    RegistroDePersonas rp = new RegistroDePersonas();
+    PeopleRegistration rp = new PeopleRegistration();
 
     Scanner s = new Scanner(System.in);
 
@@ -41,7 +41,7 @@ public class Main {
                 System.out.println("Ingrese materia:");
                 materiaDocente = s.nextLine();
 
-                Docente d = new Docente(nombreDocente, materiaDocente);
+                Teacher d = new Teacher(nombreDocente, materiaDocente);
                 rp.insertarPersona(d);
                 break;
 
@@ -55,7 +55,7 @@ public class Main {
                 System.out.println("Ingrese sueldo:");
                 sueldoEmpresario = s.nextDouble();
 
-                Empresario e = new Empresario(nombreEmpresario, sueldoEmpresario);
+                Businessman e = new Businessman(nombreEmpresario, sueldoEmpresario);
                 rp.insertarPersona(e);
                 break;
 

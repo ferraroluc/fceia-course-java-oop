@@ -2,78 +2,84 @@ import java.util.*;
 
 public class MainExample {
     public static void main(String[] args) {
-        Persona p = new Persona("Juan");
-        Docente d = new Docente("Carlos", "Ingeniería de Software");
-        Empresario e = new Empresario("Daniel", 400000);
+        // objects
+        Person p = new Person("Juan");
+        Teacher t = new Teacher("Carlos", "Ingeniería de Software");
+        Businessman b = new Businessman("Daniel", 400000);
 
-        // Método implícito polimórfico
-        System.out.println("\n====== ToString ======");
+        // polymorphic implicit method
+        System.out.println("\n====== Método implícito polimórfico (toString) ======");
         System.out.println(p);
-        System.out.println(d);
-        System.out.println(e);
+        System.out.println(t);
+        System.out.println(b);
 
-        // Método polimórfico
-        System.out.println("\n====== Identificarse ======");
-        p.identificarse();
-        d.identificarse();
-        e.identificarse();
+        // polymorphic method
+        System.out.println("\n====== Método polimórfico (identificarse) ======");
+        p.identify();
+        t.identify();
+        b.identify();
 
-        // Variable polimórfica
+        // polymorphic variable
         System.out.println("\n====== Variable polimórfica ======");
-        Persona p1;
-        p1 = e;
-        p1.identificarse();
+        Person p1;
+        p1 = b;
+        p1.identify();
 
-        // Estructura de datos polimórfica
+        // Polymorphic data structure
         System.out.println("\n====== Estructura de datos polimórfica ======");
-        Persona []aps = new Persona[4];
-        aps[0] = new Persona("Gabriel");
-        aps[1] = new Docente("Ana", "Derecho Informático");
-        aps[2] = new Empresario("Germán", 600000);
-        aps[3] = new Docente("Luis", "Ingeniería Web");
+        Person []ps = new Person[4];
+        ps[0] = new Person("Gabriel");
+        ps[1] = new Teacher("Ana", "Derecho Informático");
+        ps[2] = new Businessman("Germán", 600000);
+        ps[3] = new Teacher("Luis", "Ingeniería Web");
 
-        for (Persona px:aps) {
-            px.identificarse();
+        for (Person px:ps) {
+            px.identify();
         }
 
-        // Colección
+        // collection
         System.out.println("\n====== Colección ======");
-        Collection coleccion = new ArrayList<>();
+        Collection c = new ArrayList<>();
 
-        // Agregar
-        System.out.println("\n====== Agregando ======");
-        coleccion.add(p);
-        coleccion.add(d);
-        coleccion.add(e);
-        coleccion.add("String de ejemplo");
-        coleccion.add(12);
+        // add
+        System.out.println("\n====== Agregar ======");
+        c.add(p);
+        c.add(t);
+        c.add(b);
+        c.add("String de ejemplo");
+        c.add(12);
 
-        for(Object o: coleccion) {
+        for(Object o: c) {
             System.out.println(o);
         }
 
-        System.out.println("La cantidad de objetos que tengo en la colección es: "+ coleccion.size() );
+        System.out.println("La cantidad de objetos que tengo en la colección es: "+ c.size() );
 
-        // Eliminar
-        System.out.println("\n====== Eliminando ======");
-        coleccion.remove(12);
+        // remove
+        System.out.println("\n====== Eliminar ======");
+        c.remove(12);
 
-        for (Object o: coleccion) {
+        for (Object o: c) {
             System.out.println(o);
         }
 
-        System.out.println("La cantidad de objetos que tengo en la colección es: "+ coleccion.size() );
+        System.out.println("La cantidad de objetos que tengo en la colección es: "+ c.size() );
 
-        // Conjuntos
-        System.out.println("\n====== Conjuntos ======");
-        Set<String> conjunto1 = new TreeSet<>();
-        Set<Integer> conjunto2 = new HashSet<>();
-        Set<Persona> conjunto3 = new LinkedHashSet<>();
+        // set
+        System.out.println("\n====== Conjunto ======");
+        Set<String> s1 = new TreeSet<>();
+        Set<Integer> s2 = new HashSet<>();
+        Set<Person> s3 = new LinkedHashSet<>();
 
-        conjunto1.add("Juan");
-        conjunto1.add("Martín");
-        conjunto2.add(23);
-        System.out.println(conjunto1);
-        System.out.println(conjunto2);
+        s1.add("Juan");
+        s1.add("Martín");
+        s2.add(23);
+
+        Person p2 = new Person("Juan");
+        s3.add(p2);
+
+        System.out.println(s1);
+        System.out.println(s2);
+        System.out.println(s3);
     }
 }
