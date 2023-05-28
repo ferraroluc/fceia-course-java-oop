@@ -54,5 +54,3 @@ Methods:
 - Getters
 - Setters
 - ToString
-
-## Monograph
