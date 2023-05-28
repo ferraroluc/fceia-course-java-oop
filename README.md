@@ -1,4 +1,4 @@
-# fceia-poo-course
+# FCEIA - Postgraduate Course - Object Oriented Programming with Java
 
 In this project we can find the Java exercises and projects for the postgraduate course "Programación Orientada a Objectos 2023". This course was ditacted by **Facultad de Ciencias Exactas, Ingeniería y Agrimensura** from **Universidad Nacional de Rosario** in the year 2023.
 
