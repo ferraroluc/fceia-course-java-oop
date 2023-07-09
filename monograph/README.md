@@ -8,6 +8,8 @@ Por ello, la práctica recomendada es la de controlar estos errores por medio de
 
 ## Tipos
 
+Existen distintos tipos de errores que pueden surgir durante el desarrollo o ejecución de cierto código.
+
 ### Errores de sintaxis
 
 ### Errores de tiempo de compilación
