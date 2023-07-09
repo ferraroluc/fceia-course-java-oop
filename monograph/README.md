@@ -20,13 +20,20 @@ Son errores que impiden la compilación del programa, como lo puede ser un error
 
 ### Errores lógicos
 
-Aunque el programa compile y se ejecute, pueden surgir errores "lógicos" que no son detectados por el sistema. Es decir, son errores que implican que el programa no hace lo que debería o lo hace de una manera incorrecta.
-
-## Jerarquía
-
-Lo errores en Java presentan una jerarquía.
+Aunque el programa compile y se ejecute, pueden surgir errores "lógicos" que no son detectados por el sistema. Es decir, son errores que implican que el programa no hace lo que debería o lo hace de una manera erronea.
 
 ## Excepciones
+
+Una excepción es un evento que ocurre durante la ejecución del programa, que interrumpe la misma.
+
+Se pueden dividir en dos tipos:
+
+- Comprobadas: deben ser declaradas en la firma del método o ser manejadas con bloques try-catch.
+- No comprobadas: no requieren dicha declaración
+
+### Jerarquía
+
+Lo errores en Java presentan una jerarquía.
 
 ## Manejo de errores
 
