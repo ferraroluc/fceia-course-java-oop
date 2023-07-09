@@ -10,28 +10,34 @@ Por ello, la práctica recomendada es la de controlar estos errores por medio de
 
 Existen distintos tipos de errores que pueden surgir durante el desarrollo o ejecución de cierto código.
 
-### Errores de sintaxis
+### Errores en tiempo de ejecución
 
-### Errores de tiempo de compilación
+Son errores encontrados durante la ejecución del programa. Pueden ser causados por diversos factores, como división por cero, desbordamiento de memoria, índices inválidos, etc.
 
-### Errores de tiempo de ejecución
+### Errores de compilación
+
+Son errores que impiden la compilación del programa, como lo puede ser un error de sintaxis. Dichos errores impiden la creación del archivo ejecutable.
+
+### Errores lógicos
+
+Aunque el programa compile y se ejecute, pueden surgir errores "lógicos" que no son detectados por el sistema. Es decir, son errores que implican que el programa no hace lo que debería o lo hace de una manera incorrecta.
 
 ## Jerarquía
 
-## Manejo
+Lo errores en Java presentan una jerarquía.
 
-### Bloques try-catch-finally.
+## Excepciones
 
-### Lanzamiento de excepciones personalizadas.
+## Manejo de errores
 
-### Utilización de múltiples bloques catch.
+### Bloques try-catch-finally
+
+### Excepciones personalizadas
+
+### Anidado de múltiples bloques catch
 
 ## Ejemplo
 
 ## Conclusiones
 
-### Resumen de los conceptos clave sobre errores y excepciones en Java.
-
-### Importancia de manejar adecuadamente los errores y excepciones en el desarrollo de software.
-
-### Recomendaciones para evitar y solucionar problemas relacionados con errores y excepciones.
+Cabe destacar la importancia de manejar adecuadamente los errores y excepciones en el desarrollo de software, para poder tener una aplicación final más estable y funcional.
